@@ -15,6 +15,13 @@ public class Task {
         this.done = done;
     }
 
+    public Task(String id, String title, String description, boolean done) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.done = done;
+    }
+
     private String GenerateID() {
         UUID uuid = UUID.randomUUID();
         return uuid.toString();
@@ -40,7 +47,7 @@ public class Task {
         this.description = description;
     }
 
-    public boolean getDone() {
+    public boolean isDone() {
         return done;
     }
 

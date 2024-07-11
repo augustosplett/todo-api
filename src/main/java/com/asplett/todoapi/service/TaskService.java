@@ -37,4 +37,14 @@ public class TaskService {
     public List<Task> getAllTasks(){
         return tasks;
     }
+
+    public void AddTask(Task task){
+        tasks.add(task);
+    }
+    public void DeleteTask(String id){
+        tasks.removeIf(task -> task.getId().equals(id));
+    }
+    public void UpdateTask(Task task){
+        tasks.set(tasks.indexOf(task), task);
+    }
 }
