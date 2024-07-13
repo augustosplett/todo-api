@@ -14,9 +14,9 @@ public class TaskService {
 
     public TaskService(){
         this.tasks = new ArrayList<>();
-        Task tk1 = new Task("teste1", "teste1", false);
-        Task tk2 = new Task("teste2", "teste2", false);
-        Task tk3 = new Task("teste3", "teste3", false);
+        Task tk1 = new Task("Task1", "teste1", true);
+        Task tk2 = new Task("Task2", "teste2", false);
+        Task tk3 = new Task("Task3", "teste3", false);
         tasks.add(tk1);
         tasks.add(tk2);
         tasks.add(tk3);
