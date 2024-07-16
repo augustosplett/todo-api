@@ -41,6 +41,7 @@ public class TaskService {
     public void AddTask(Task task){
         tasks.add(task);
     }
+
     public void DeleteTask(String id){
         tasks.removeIf(task -> task.getId().equals(id));
     }

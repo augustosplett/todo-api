@@ -28,11 +28,12 @@ public class TaskController {
         return taskService.getAllTasks();
     }
     @PostMapping("/tasks")
-    public void createTask(@RequestBody TaskRequest taskRequest) {
+    public Task createTask(@RequestBody TaskRequest taskRequest) {
         // Convert TaskRequest to Task
         Task task = new Task(taskRequest.getTitle(), taskRequest.getDescription(), taskRequest.isDone());
         //save task
         taskService.AddTask(task);
+        return task;
     }
     @DeleteMapping("/tasks")
     public void deleteTask(@RequestParam String id) {

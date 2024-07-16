@@ -3,7 +3,7 @@ package com.asplett.todoapi.api.dto;
 public class TaskRequest {
     private String title;
     private String description;
-    private boolean done;
+    private boolean isDone;
 
     // Getters and Setters
     public String getTitle() {
@@ -23,10 +23,10 @@ public class TaskRequest {
     }
 
     public boolean isDone() {
-        return done;
+        return isDone;
     }
 
     public void setDone(boolean done) {
-        this.done = done;
+        this.isDone = done;
     }
 }
